@@ -27,7 +27,7 @@
             left: 0;
             width: 100%;
             height: 100vh;
-            background: url('jefted.jpg') no-repeat center top;
+            background: url('jefted.jpg') no-repeat center center;
             background-size: cover;
             z-index: -1;
         }
@@ -35,8 +35,7 @@
         .content-wrapper {
             position: relative;
             width: 100%;
-            min-height: 200vh;
-            padding: 50px 10%;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -47,6 +46,10 @@
             text-align: center;
             width: 80%;
             max-width: 600px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         .center-content h1 {
@@ -117,8 +120,7 @@
         <div class="center-content">
             <h1>TWO ENDS OF A SPECTRUM, ONE PREDATORY NATURE:<br>
                 HOW SOCIETY ENABLES THE WORST</h1>
-            <p>Explores the chilling stories of Jeffrey Dahmer and Ted Bundy—two infamous 
-              serial killers with vastly different personas yet a shared darkness.</p>
+            <p>Explores the chilling stories of Jeffrey Dahmer and Ted Bundy—two infamous serial killers with vastly different personas yet a shared darkness.</p>
             <button class="learn-more-btn">Learn More</button>
         </div>
     </div>
