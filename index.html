@@ -11,13 +11,25 @@
     <link href="https://fonts.cdnfonts.com/css/carlito" rel="stylesheet">
 
     <style>
-        /* Set the background to black */
+        /* Set background color */
         body {
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
             background-color: black;
-            overflow-x: hidden; /* Remove horizontal scrolling */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        /* Full-screen background image */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: url('jefted.jpg') no-repeat center top;
+            background-size: contain;
+            z-index: -1;
         }
 
         /* Content Wrapper to enable scrolling */
@@ -25,11 +37,9 @@
             position: relative;
             width: 100%;
             min-height: 200vh; /* Ensures content can scroll */
-            padding: 50px 10%;
+            padding-top: 50vh; /* Adjust position to center content */
+            text-align: center;
             color: white;
-            background: url('jefted.jpg') no-repeat center top;
-            background-size: contain;
-            background-attachment: fixed;
         }
 
         /* Position the logo */
@@ -70,8 +80,9 @@
 
         /* Center Content */
         .center-content {
-            text-align: center;
-            margin-top: 20vh;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
 
         .center-content h1 {
@@ -79,9 +90,6 @@
             font-size: 32px;
             margin-bottom: 20px;
             line-height: 1.4;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
             white-space: pre-line;
         }
 
@@ -115,6 +123,8 @@
 </head>
 
 <body>
+    <div class="background"></div>
+
     <!-- Logo -->
     <div class="logo-container">
         <img src="gr1-logo.jpg" alt="Logo">
