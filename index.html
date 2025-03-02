@@ -11,45 +11,69 @@
     <link href="https://fonts.cdnfonts.com/css/carlito" rel="stylesheet">
 
     <style>
-        /* Set black background */
+        /* General Reset */
         body {
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
             background-color: black;
+            color: white;
+            overflow-x: hidden;
         }
 
-        /* Background image that moves with scrolling */
-        .background-image {
-            width: 100%;
-            height: 100vh;
-            background: url('jefted.jpg') no-repeat center top;
-            background-size: cover;
-        }
-
-        /* Content Wrapper */
-        .content-wrapper {
+        /* Full-screen Background Image */
+        .hero {
             position: relative;
             width: 100%;
-            min-height: 200vh; /* Ensures content can scroll */
-            padding: 50px 10%;
+            height: 90vh; /* Leaves space at the bottom */
+            background: url('jefted.jpg') no-repeat center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-family: 'Lora', serif;
+            font-size: 36px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-family: 'Times New Roman', serif;
+            font-size: 18px;
+            color: #ddd;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .learn-more-btn {
+            font-family: 'Lora', serif;
+            font-size: 14px;
+            padding: 10px 20px;
+            background-color: transparent;
             color: white;
+            border: 2px solid white;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 25px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
-        /* Position the logo */
-        .logo-container {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            z-index: 10;
+        .learn-more-btn:hover {
+            background-color: white;
+            color: black;
         }
 
-        .logo-container img {
-            width: 100px;
-            height: auto;
-        }
-
-        /* Navigation Buttons */
+        /* Navigation */
         .nav-buttons {
             position: fixed;
             top: 20px;
@@ -72,62 +96,13 @@
             color: #ffe3b8;
         }
 
-        /* Center Content */
-        .center-content {
-            text-align: center;
-            margin-top: 10vh;
-        }
-
-        .center-content h1 {
-            font-family: 'Lora', serif;
-            font-size: 32px;
-            margin-bottom: 20px;
-            line-height: 1.4;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            white-space: pre-line;
-        }
-
-        .center-content p {
-            font-family: 'Times New Roman', serif;
-            font-size: 18px;
-            margin-bottom: 20px;
-            color: #ccc;
-        }
-
-        /* Learn More Button */
-        .learn-more-btn {
-            font-family: 'Lora', serif;
-            font-size: 14px;
-            padding: 10px 20px;
-            background-color: transparent;
-            color: white;
-            border: 2px solid white;
-            cursor: pointer;
-            margin-top: 20px;
-            border-radius: 25px;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .learn-more-btn:hover {
-            background-color: white;
-            color: black;
+        /* Space below image */
+        .spacer {
+            height: 20vh;
         }
     </style>
 </head>
-
 <body>
-    <!-- Background Image -->
-    <div class="background-image"></div>
-
-    <!-- Logo -->
-    <div class="logo-container">
-        <img src="gr1-logo.jpg" alt="Logo">
-        <div>Logo Text</div>
-    </div>
-
     <!-- Navigation -->
     <div class="nav-buttons">
         <button>HOME</button>
@@ -137,15 +112,16 @@
         <button>CONTACT</button>
     </div>
 
-    <!-- Scrollable Content -->
-    <div class="content-wrapper">
-        <div class="center-content">
-            <h1>TWO ENDS OF A SPECTRUM,  
-                ONE PREDATORY NATURE:
-                HOW SOCIETY ENABLES THE WORST</h1>
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>TWO ENDS OF A SPECTRUM,  <br> ONE PREDATORY NATURE:<br> HOW SOCIETY ENABLES THE WORST</h1>
             <p>Explores the chilling stories of Jeffrey Dahmer and Ted Bundy—two infamous serial killers with vastly different personas yet a shared darkness.</p>
             <button class="learn-more-btn">Learn More</button>
         </div>
     </div>
+
+    <!-- Spacer to add bottom space -->
+    <div class="spacer"></div>
 </body>
 </html>
