@@ -11,7 +11,7 @@
     <link href="https://fonts.cdnfonts.com/css/carlito" rel="stylesheet">
 
     <style>
-        /* Set the background image without zooming */
+        /* General Styles */
         body {
             margin: 0;
             padding: 0;
@@ -26,10 +26,18 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: calc(100vh - 50px); /* Leaves space at the bottom */
+            height: calc(100vh - 1in);
             background: url('jefted.jpg') no-repeat center top;
             background-size: cover;
             z-index: -1;
+        }
+
+        /* Content Wrapper to enable scrolling */
+        .content-wrapper {
+            position: relative;
+            width: 100%;
+            min-height: 250vh; /* Ensures content can scroll */
+            padding-top: calc(100vh - 1in);
         }
 
         /* Navigation Buttons */
@@ -104,14 +112,9 @@
             color: black;
         }
 
-        /* Content Wrapper for scrolling */
-        .content-wrapper {
-            position: relative;
-            width: 100%;
-            min-height: 200vh; /* Ensures content can scroll */
+        /* Section Below the Header */
+        .episode-section {
             padding: 50px 10%;
-            color: white;
-            margin-top: calc(100vh - 50px); /* Starts right after the background image */
         }
     </style>
 </head>
@@ -119,7 +122,7 @@
 <body>
     <!-- Background Image -->
     <div class="background-container"></div>
-
+    
     <!-- Navigation -->
     <div class="nav-buttons">
         <button>HOME</button>
@@ -135,4 +138,15 @@
             <h1>TWO ENDS OF A SPECTRUM,  
                 ONE PREDATORY NATURE:
                 HOW SOCIETY ENABLES THE WORST</h1>
-            <p>Explores the chilling stories of Jeffrey Dahmer and Ted Bundy—two infamou
+            <p>Explores the chilling stories of Jeffrey Dahmer and Ted Bundy—two infamous serial killers with vastly different personas yet a shared darkness.</p>
+            <button class="learn-more-btn">Learn More</button>
+        </div>
+
+        <!-- Section for Episode 1 -->
+        <div class="episode-section">
+            <h2>Episode 1: The Beginning</h2>
+            <p>Introduction to the series and background on the two killers.</p>
+        </div>
+    </div>
+</body>
+</html>
