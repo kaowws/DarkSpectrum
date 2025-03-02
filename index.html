@@ -11,15 +11,15 @@
     <link href="https://fonts.cdnfonts.com/css/carlito" rel="stylesheet">
 
     <style>
-        /* Set the background image without zooming */
         body {
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
             background-color: black;
+            color: white;
         }
 
-        /* Fullscreen Image Background */
+        /* Fullscreen Background Image, Scroll Effect */
         .background-container {
             position: fixed;
             top: 0;
@@ -27,30 +27,17 @@
             width: 100%;
             height: 100vh;
             background: url('jefted.jpg') no-repeat center top;
-            background-size: contain;
+            background-size: cover;
             z-index: -1;
         }
 
-        /* Content Wrapper to enable scrolling */
+        /* Content Wrapper with Spacing */
         .content-wrapper {
             position: relative;
             width: 100%;
-            min-height: 200vh; /* Ensures content can scroll */
+            min-height: 220vh; /* Ensures enough scroll space */
             padding: 50px 10%;
-            color: white;
-        }
-
-        /* Position the logo */
-        .logo-container {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            z-index: 10;
-        }
-
-        .logo-container img {
-            width: 100px;
-            height: auto;
+            background: rgba(0, 0, 0, 0.8); /* Black background behind text */
         }
 
         /* Navigation Buttons */
@@ -79,21 +66,18 @@
         /* Center Content */
         .center-content {
             text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: relative;
+            top: 50vh;
+            transform: translateY(-50%);
             width: 80%;
+            margin: 0 auto;
         }
 
         .center-content h1 {
             font-family: 'Lora', serif;
             font-size: 32px;
-            margin-bottom: 20px;
             line-height: 1.4;
             max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
             white-space: pre-line;
             font-weight: normal;
         }
@@ -102,7 +86,6 @@
             font-family: 'Times New Roman', serif;
             font-size: 18px;
             margin-bottom: 20px;
-            color: white;
         }
 
         /* Learn More Button */
@@ -130,11 +113,6 @@
 <body>
     <!-- Background Image -->
     <div class="background-container"></div>
-    
-    <!-- Logo -->
-    <div class="logo-container">
-        <img src="gr1-logo.jpg" alt="Logo">
-    </div>
 
     <!-- Navigation -->
     <div class="nav-buttons">
@@ -157,3 +135,4 @@
     </div>
 </body>
 </html>
+
