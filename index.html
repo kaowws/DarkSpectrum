@@ -19,89 +19,37 @@
             color: white;
         }
 
-        /* Fullscreen Background Image, Scroll Effect */
+        /* Fixed Background Container */
         .background-container {
-            position: fixed;
-            top: 0;
-            left: 0;
+            position: relative;
             width: 100%;
-            height: 100vh;
+            height: 100vh; /* Full viewport height */
             background: url('jefted.jpg') no-repeat center top;
             background-size: cover;
-            z-index: -1;
-        }
-
-        /* Content Wrapper with Spacing */
-        .content-wrapper {
-            position: relative;
-            width: 100%;
-            min-height: 220vh; /* Ensures enough scroll space */
-            padding: 50px 10%;
-            background: rgba(0, 0, 0, 0.8); /* Black background behind text */
-        }
-
-        /* Logo */
-        .logo-container {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            z-index: 10;
-        }
-
-        .logo-container img {
-            width: 100px;
-            height: auto;
-        }
-
-        /* Navigation Buttons */
-        .nav-buttons {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 10;
-        }
-
-        .nav-buttons button {
-            background-color: transparent;
-            color: white;
-            border: none;
-            font-family: 'Lora', serif;
-            font-size: 18px;
-            margin-left: 15px;
-            cursor: pointer;
-            transition: color 0.3s ease;
-        }
-
-        .nav-buttons button:hover {
-            color: #ffe3b8;
-        }
-
-        /* Center Content */
-        .center-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            position: relative;
-            top: 50vh;
-            transform: translateY(-50%);
-            width: 80%;
-            margin: 0 auto;
         }
 
-        .center-content h1 {
+        /* Content inside the background */
+        .overlay-content {
+            position: absolute;
+            width: 80%;
+            max-width: 800px;
+        }
+
+        .overlay-content h1 {
             font-family: 'Lora', serif;
             font-size: 32px;
             line-height: 1.4;
-            max-width: 600px;
-            white-space: pre-line;
             font-weight: normal;
         }
 
-        .center-content p {
-            font-family: 'Times New Roman', serif;
+        .overlay-content p {
             font-size: 18px;
-            margin-bottom: 20px;
         }
 
-        /* Learn More Button */
         .learn-more-btn {
             font-family: 'Lora', serif;
             font-size: 14px;
@@ -120,36 +68,48 @@
             background-color: white;
             color: black;
         }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .nav-buttons button {
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-family: 'Lora', serif;
+            font-size: 18px;
+            margin-left: 15px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .nav-buttons button:hover {
+            color: #ffe3b8;
+        }
+
+        /* Scrollable Content */
+        .content-wrapper {
+            padding: 20px 10%;
+            min-height: 100vh;
+        }
     </style>
 </head>
-
 <body>
-    <!-- Background Image -->
-    <div class="background-container"></div>
-    
-    <!-- Logo -->
-    <div class="logo-container">
-        <img src="gr1-logo.jpg" alt="Logo">
-    </div>
-
-    <!-- Navigation -->
-    <div class="nav-buttons">
-        <button>HOME</button>
-        <button>ABOUT</button>
-        <button>DARKSPECTRUM</button>
-        <button>SUPPORT</button>
-        <button>CONTACT</button>
-    </div>
-
-    <!-- Scrollable Content -->
-    <div class="content-wrapper">
-        <div class="center-content">
-            <h1>TWO ENDS OF A SPECTRUM,  
-                ONE PREDATORY NATURE:
-                HOW SOCIETY ENABLES THE WORST</h1>
+    <div class="background-container">
+        <div class="overlay-content">
+            <h1>TWO ENDS OF A SPECTRUM, ONE PREDATORY NATURE: HOW SOCIETY ENABLES THE WORST</h1>
             <p>Explores the chilling stories of Jeffrey Dahmer and Ted Bundy—two infamous serial killers with vastly different personas yet a shared darkness.</p>
             <button class="learn-more-btn">Learn More</button>
         </div>
+    </div>
+
+    <div class="content-wrapper">
+        <h2>Episode 1: Introduction</h2>
+        <p>Start the journey into the dark minds and societal factors that enabled these criminals.</p>
     </div>
 </body>
 </html>
