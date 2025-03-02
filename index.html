@@ -16,7 +16,7 @@
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background: url('jefted.jpg') no-repeat center center fixed;
+            background: url('jefted.jpg') no-repeat center center;
             background-size: cover;
         }
 
@@ -27,11 +27,13 @@
             min-height: 200vh; /* Makes sure there's enough content to scroll */
             padding: 50px 10%;
             color: white;
+            background: url('jefted.jpg') no-repeat center center;
+            background-size: cover;
         }
 
         /* Position the logo */
         .logo-container {
-            position: fixed;
+            position: absolute;
             top: 20px;
             left: 20px;
             z-index: 10;
@@ -44,7 +46,7 @@
 
         /* Navigation Buttons */
         .nav-buttons {
-            position: fixed;
+            position: absolute;
             top: 20px;
             right: 20px;
             z-index: 10;
@@ -133,3 +135,4 @@
     </div>
 </body>
 </html>
+
