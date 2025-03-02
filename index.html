@@ -19,37 +19,92 @@
             color: white;
         }
 
-        /* Fixed Background Container */
+        /* Fullscreen Image Background */
         .background-container {
-            position: relative;
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 100vh; /* Full viewport height */
+            height: 100vh;
             background: url('jefted.jpg') no-repeat center top;
             background-size: cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            z-index: -1;
+        }
+
+        /* Content Wrapper to enable scrolling */
+        .content-wrapper {
+            position: relative;
+            width: 100%;
+            min-height: 200vh; /* Ensures content can scroll */
+            padding-top: calc(100vh - 50px); /* Leaves a gap to show next section */
+        }
+
+        /* Logo */
+        .logo-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+        }
+
+        .logo-container img {
+            width: 100px;
+            height: auto;
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+        }
+
+        .nav-buttons button {
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-family: 'Lora', serif;
+            font-size: 18px;
+            margin-left: 15px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .nav-buttons button:hover {
+            color: #ffe3b8;
+        }
+
+        /* Center Content */
+        .center-content {
             text-align: center;
-        }
-
-        /* Content inside the background */
-        .overlay-content {
             position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 80%;
-            max-width: 800px;
         }
 
-        .overlay-content h1 {
+        .center-content h1 {
             font-family: 'Lora', serif;
             font-size: 32px;
+            margin-bottom: 20px;
             line-height: 1.4;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            white-space: pre-line;
             font-weight: normal;
         }
 
-        .overlay-content p {
+        .center-content p {
+            font-family: 'Times New Roman', serif;
             font-size: 18px;
+            margin-bottom: 20px;
+            color: white;
         }
 
+        /* Learn More Button */
         .learn-more-btn {
             font-family: 'Lora', serif;
             font-size: 14px;
@@ -68,48 +123,36 @@
             background-color: white;
             color: black;
         }
-
-        /* Navigation Buttons */
-        .nav-buttons {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-        }
-
-        .nav-buttons button {
-            background-color: transparent;
-            color: white;
-            border: none;
-            font-family: 'Lora', serif;
-            font-size: 18px;
-            margin-left: 15px;
-            cursor: pointer;
-            transition: color 0.3s ease;
-        }
-
-        .nav-buttons button:hover {
-            color: #ffe3b8;
-        }
-
-        /* Scrollable Content */
-        .content-wrapper {
-            padding: 20px 10%;
-            min-height: 100vh;
-        }
     </style>
 </head>
+
 <body>
-    <div class="background-container">
-        <div class="overlay-content">
-            <h1>TWO ENDS OF A SPECTRUM, ONE PREDATORY NATURE: HOW SOCIETY ENABLES THE WORST</h1>
+    <!-- Background Image -->
+    <div class="background-container"></div>
+    
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="gr1-logo.jpg" alt="Logo">
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-buttons">
+        <button>HOME</button>
+        <button>ABOUT</button>
+        <button>DARKSPECTRUM</button>
+        <button>SUPPORT</button>
+        <button>CONTACT</button>
+    </div>
+
+    <!-- Scrollable Content -->
+    <div class="content-wrapper">
+        <div class="center-content">
+            <h1>TWO ENDS OF A SPECTRUM,  
+                ONE PREDATORY NATURE:
+                HOW SOCIETY ENABLES THE WORST</h1>
             <p>Explores the chilling stories of Jeffrey Dahmer and Ted Bundy—two infamous serial killers with vastly different personas yet a shared darkness.</p>
             <button class="learn-more-btn">Learn More</button>
         </div>
-    </div>
-
-    <div class="content-wrapper">
-        <h2>Episode 1: Introduction</h2>
-        <p>Start the journey into the dark minds and societal factors that enabled these criminals.</p>
     </div>
 </body>
 </html>
