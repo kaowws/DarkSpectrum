@@ -11,34 +11,34 @@
     <link href="https://fonts.cdnfonts.com/css/carlito" rel="stylesheet">
 
     <style>
-        /* Set the background image without zooming */
+        /* Set background image only at the top */
         body {
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
             background-color: black;
-            overflow-x: hidden; /* Prevent horizontal scrolling */
         }
 
-        /* Fullscreen Image Background */
+        /* Background Image at the Top */
         .background-container {
-            position: fixed;
+            position: absolute;
             top: 0;
             left: 0;
             width: 100%;
-            height: 100vh;
+            height: 50vh; /* Only half of the viewport height */
             background: url('jefted.jpg') no-repeat center top;
-            background-size: cover;
+            background-size: contain;
             z-index: -1;
         }
 
-        /* Content Wrapper to enable scrolling */
+        /* Content Wrapper for scrolling */
         .content-wrapper {
+            position: relative;
             width: 100%;
-            min-height: 200vh; /* Ensures content can scroll */
-            padding: 100px 10%;
-            color: white;
+            min-height: 200vh; /* Ensures scrolling */
+            padding-top: 50vh; /* Push content below the background image */
             text-align: center;
+            color: white;
         }
 
         /* Fixed Logo */
@@ -77,24 +77,27 @@
             color: #ffe3b8;
         }
 
-        /* Main Content */
+        /* Centered Content */
         .center-content {
-            max-width: 800px;
-            margin: 100px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 50vh;
+            padding: 20px;
         }
 
         .center-content h1 {
             font-family: 'Lora', serif;
             font-size: 32px;
-            margin-bottom: 20px;
-            line-height: 1.4;
+            max-width: 600px;
+            white-space: pre-line;
             font-weight: normal;
         }
 
         .center-content p {
             font-family: 'Times New Roman', serif;
             font-size: 18px;
-            color: white;
         }
 
         /* Learn More Button */
@@ -106,6 +109,7 @@
             color: white;
             border: 2px solid white;
             cursor: pointer;
+            margin-top: 20px;
             border-radius: 25px;
             text-transform: uppercase;
             transition: background-color 0.3s ease, color 0.3s ease;
@@ -119,15 +123,15 @@
 </head>
 
 <body>
-    <!-- Background Image -->
+    <!-- Background Image at the Top -->
     <div class="background-container"></div>
     
-    <!-- Logo -->
+    <!-- Fixed Logo -->
     <div class="logo-container">
         <img src="gr1-logo.jpg" alt="Logo">
     </div>
 
-    <!-- Navigation -->
+    <!-- Fixed Navigation -->
     <div class="nav-buttons">
         <button>HOME</button>
         <button>ABOUT</button>
@@ -139,7 +143,9 @@
     <!-- Scrollable Content -->
     <div class="content-wrapper">
         <div class="center-content">
-            <h1>TWO ENDS OF A SPECTRUM,<br>ONE PREDATORY NATURE:<br>HOW SOCIETY ENABLES THE WORST</h1>
+            <h1>TWO ENDS OF A SPECTRUM,  
+                ONE PREDATORY NATURE:
+                HOW SOCIETY ENABLES THE WORST</h1>
             <p>Explores the chilling stories of Jeffrey Dahmer and Ted Bundy—two infamous serial killers with vastly different personas yet a shared darkness.</p>
             <button class="learn-more-btn">Learn More</button>
         </div>
