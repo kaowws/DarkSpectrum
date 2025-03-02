@@ -11,34 +11,28 @@
     <link href="https://fonts.cdnfonts.com/css/carlito" rel="stylesheet">
 
     <style>
-        /* Set background color */
+        /* Set black background */
         body {
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
             background-color: black;
-            overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
-        /* Full-screen background image */
-        .background {
-            position: fixed;
-            top: 0;
-            left: 0;
+        /* Background image that moves with scrolling */
+        .background-image {
             width: 100%;
             height: 100vh;
             background: url('jefted.jpg') no-repeat center top;
-            background-size: contain;
-            z-index: -1;
+            background-size: cover;
         }
 
-        /* Content Wrapper to enable scrolling */
+        /* Content Wrapper */
         .content-wrapper {
             position: relative;
             width: 100%;
             min-height: 200vh; /* Ensures content can scroll */
-            padding-top: 50vh; /* Adjust position to center content */
-            text-align: center;
+            padding: 50px 10%;
             color: white;
         }
 
@@ -80,9 +74,8 @@
 
         /* Center Content */
         .center-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            text-align: center;
+            margin-top: 10vh;
         }
 
         .center-content h1 {
@@ -90,6 +83,9 @@
             font-size: 32px;
             margin-bottom: 20px;
             line-height: 1.4;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
             white-space: pre-line;
         }
 
@@ -123,7 +119,8 @@
 </head>
 
 <body>
-    <div class="background"></div>
+    <!-- Background Image -->
+    <div class="background-image"></div>
 
     <!-- Logo -->
     <div class="logo-container">
