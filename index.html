@@ -13,11 +13,21 @@
     <style>
         /* Set the entire page background to black */
         body {
-            background-color: #000; /* Black background */
             margin: 0;
             padding: 0;
             overflow: hidden; /* Prevent scroll */
             font-family: 'Arial', sans-serif; /* Default font */
+        }
+
+        /* Background Image covering everything */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('jefted.jpg') no-repeat center center/cover;
+            z-index: -1;
         }
 
         /* Position the logo */
@@ -59,39 +69,22 @@
         /* Center Content */
         .center-content {
             position: absolute;
-            top: 38%; /* Adjusted upward */
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
             color: white;
-            width: 100%;
+            width: 80%;
         }
 
-        .title-section {
-            position: relative;
-            display: inline-block;
-        }
-
-        .title-section img {
-            width: 100%;
-            height: auto;
-            max-height: 400px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .title-section h1 {
+        .center-content h1 {
             font-family: 'Lora', serif;
             font-size: 32px;
             margin-bottom: 20px; /* Added space below title */
             line-height: 1.4;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.6);
             padding: 10px;
+            display: inline-block;
         }
 
         .center-content p {
@@ -99,6 +92,9 @@
             font-size: 18px;
             margin-bottom: 20px; /* Added space below description */
             color: #ccc;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            display: inline-block;
         }
 
         /* Learn More Button */
@@ -124,6 +120,8 @@
 </head>
 
 <body>
+    <!-- Background Image -->
+    <div class="background"></div>
 
     <!-- Logo -->
     <div class="logo-container">
@@ -142,14 +140,9 @@
 
     <!-- Center Content -->
     <div class="center-content">
-        <div class="title-section">
-            <img src="jefted.jpg" alt="Title Background">
-            <h1>TWO ENDS OF A SPECTRUM, ONE PREDATORY NATURE: HOW SOCIETY ENABLES THE WORST</h1>
-        </div>
+        <h1>TWO ENDS OF A SPECTRUM, ONE PREDATORY NATURE: HOW SOCIETY ENABLES THE WORST</h1>
         <p>Explores the chilling stories of Jeffrey Dahmer and Ted Bundy—two infamous serial killers with vastly different personas yet a shared darkness.</p>
         <button class="learn-more-btn">Learn More</button>
     </div>
 </body>
 </html>
-
-
