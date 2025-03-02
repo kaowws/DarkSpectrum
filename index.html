@@ -25,6 +25,9 @@
             top: 20px;
             left: 20px;
             z-index: 10;
+            font-family: 'Lora', serif;
+            color: white;
+            font-size: 24px;
         }
 
         .logo-container img {
@@ -58,7 +61,7 @@
         /* Center Content */
         .center-content {
             position: absolute;
-            top: 45%; /* Adjusted from 50% to move content higher */
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             text-align: center;
@@ -67,6 +70,62 @@
 
         .center-content h1 {
             font-family: 'Lora', serif;
-            font-size: 30px; /* Made title bigger */
-    
+            font-size: 32px;
+            margin: 0;
+        }
+
+        .center-content p {
+            font-family: 'Lora', serif;
+            font-size: 18px;
+            margin-top: 10px;
+            color: #ccc;
+        }
+
+        /* Learn More Button */
+        .learn-more-btn {
+            font-family: 'Lora', serif;
+            font-size: 14px;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 25px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .learn-more-btn:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="gr1-logo.jpg" alt="Logo"> <!-- Make sure the image file is correct -->
+        <div>Logo Text</div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-buttons">
+        <button>HOME</button>
+        <button>ABOUT</button>
+        <button>DARKSPECTRUM</button>
+        <button>SUPPORT</button>
+        <button>CONTACT</button>
+    </div>
+
+    <!-- Center Content -->
+    <div class="center-content">
+        <h1>Two Ends of a Spectrum, One Predatory Nature: How Society Enables the Worst.</h1>
+        <p>Explores the chilling stories of Jeffrey Dahmer and Ted Bundy—two infamous serial killers with vastly different personas yet a shared darkness.</p>
+        <button class="learn-more-btn">Learn More</button>
+    </div>
+</body>
+</html>
 
