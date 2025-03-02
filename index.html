@@ -11,13 +11,13 @@
     <link href="https://fonts.cdnfonts.com/css/carlito" rel="stylesheet">
 
     <style>
-        /* Set the background image without zooming */
+        /* Set the background to black */
         body {
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
-            background: url('jefted.jpg') no-repeat center top;
-            background-size: contain;
+            background-color: black;
+            overflow-x: hidden; /* Remove horizontal scrolling */
         }
 
         /* Content Wrapper to enable scrolling */
@@ -27,6 +27,9 @@
             min-height: 200vh; /* Ensures content can scroll */
             padding: 50px 10%;
             color: white;
+            background: url('jefted.jpg') no-repeat center top;
+            background-size: contain;
+            background-attachment: fixed;
         }
 
         /* Position the logo */
@@ -139,4 +142,3 @@
     </div>
 </body>
 </html>
-
