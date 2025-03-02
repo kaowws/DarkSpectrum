@@ -40,6 +40,19 @@
             background: rgba(0, 0, 0, 0.8); /* Black background behind text */
         }
 
+        /* Logo */
+        .logo-container {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+        }
+
+        .logo-container img {
+            width: 100px;
+            height: auto;
+        }
+
         /* Navigation Buttons */
         .nav-buttons {
             position: fixed;
@@ -113,6 +126,11 @@
 <body>
     <!-- Background Image -->
     <div class="background-container"></div>
+    
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="gr1-logo.jpg" alt="Logo">
+    </div>
 
     <!-- Navigation -->
     <div class="nav-buttons">
@@ -135,4 +153,3 @@
     </div>
 </body>
 </html>
-
