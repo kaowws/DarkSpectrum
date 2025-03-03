@@ -27,13 +27,24 @@
             height: auto;
         }
 
-        .center-logo {
+        .center-content {
             position: absolute;
-            top: 50%;
+            top: 40%; /* Moved slightly higher */
             left: 50%;
             transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .center-logo {
             width: 150px;
             height: auto;
+            margin-bottom: 5px; /* Reduced spacing */
+        }
+
+        .footer-text {
+            font-family: 'Lora', serif;
+            font-size: 24px;
+            margin-top: -5px; /* Moved closer */
         }
 
         .nav-buttons {
@@ -57,19 +68,10 @@
         .nav-buttons button:hover {
             color: #ffe3b8;
         }
-
-        .footer-text {
-            position: absolute;
-            bottom: 20px;
-            width: 100%;
-            font-family: 'Lora', serif;
-            font-size: 24px;
-        }
     </style>
 </head>
 <body>
     <img src="gr1-logo.jpg" alt="Logo" class="logo">
-    <img src="gr1-logo.jpg" alt="Centered Logo" class="center-logo">
     
     <div class="nav-buttons">
         <button>HOME</button>
@@ -78,8 +80,9 @@
         <button>CONTACT</button>
     </div>
     
-    <div class="footer-text">DarkSpectrum</div>
+    <div class="center-content">
+        <img src="gr1-logo.jpg" alt="Centered Logo" class="center-logo">
+        <div class="footer-text">DarkSpectrum</div>
+    </div>
 </body>
 </html>
-
-
