@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DarkSpectrum</title>
-
-    <!-- Import Fonts -->
+    <title>DarkSeptrum</title>
     <link href="https://fonts.cdnfonts.com/css/gagalin" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/lora" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/carlito" rel="stylesheet">
-
     <style>
         body {
             margin: 0;
@@ -33,103 +30,29 @@
         }
 
         .logo {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            width: 100px;
+            width: 150px;
             height: auto;
         }
 
         .content-wrapper {
-            position: relative;
-            width: 100%;
-            min-height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            height: 100vh;
         }
 
-        .center-content {
-            text-align: center;
-            width: 80%;
-            max-width: 600px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .center-content h1 {
+        .title {
             font-family: 'Lora', serif;
-            font-size: 32px;
-            line-height: 1.4;
-            font-weight: normal;
-        }
-
-        .center-content p {
-            font-family: 'Times New Roman', serif;
-            font-size: 18px;
-        }
-
-        .learn-more-btn {
-            font-family: 'Lora', serif;
-            font-size: 14px;
-            padding: 10px 20px;
-            background-color: transparent;
-            color: white;
-            border: 2px solid white;
-            cursor: pointer;
-            border-radius: 25px;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-
-        .learn-more-btn:hover {
-            background-color: white;
-            color: black;
-        }
-
-        .nav-buttons {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 10;
-        }
-
-        .nav-buttons button {
-            background-color: transparent;
-            color: white;
-            border: none;
-            font-family: 'Lora', serif;
-            font-size: 18px;
-            margin-left: 15px;
-            cursor: pointer;
-            transition: color 0.3s ease;
-        }
-
-        .nav-buttons button:hover {
-            color: #ffe3b8;
+            font-size: 24px;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <img src="gr1-logo.jpg" alt="Logo" class="logo">
-    <div class="background-container"></div>
-    
-    <div class="nav-buttons">
-        <button>HOME</button>
-        <button>ABOUT</button>
-        <button>PRODUCT</button>
-        <button>CONTACT</button>
-    </div>
-
     <div class="content-wrapper">
-        <div class="center-content">
-            <h1>TWO ENDS OF A SPECTRUM, ONE PREDATORY NATURE:<br>
-                HOW SOCIETY ENABLES THE WORST</h1>
-            <p>Explores the chilling stories of Jeffrey Dahmer and Ted Bundy—two infamous serial killers with vastly
-                different personas yet a shared darkness.</p>
-            <button class="learn-more-btn">Learn More</button>
-        </div>
+        <img src="gr1-logo.jpg" alt="DarkSeptrum Logo" class="logo">
+        <div class="title">DarkSeptrum</div>
     </div>
 </body>
 </html>
