@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +7,9 @@
     <title>DarkSpectrum</title>
 
     <!-- Import Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/gagalin" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/lora" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Gagalin&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/carlito" rel="stylesheet">
 
     <style>
         body {
@@ -20,27 +22,20 @@
             overflow-x: hidden;
         }
 
-        .logo-container {
-            text-align: center;
-            padding: 20px 0;
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
         }
 
         .logo {
-            width: 150px;
+            width: 100px;
             height: auto;
-        }
-
-        .footer-text {
-            font-family: 'Gagalin', sans-serif;
-            font-size: 32px;
-            margin-top: 10px;
-        }
-
-        .nav-buttons {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 10;
         }
 
         .nav-buttons button {
@@ -58,74 +53,78 @@
             color: #ffe3b8;
         }
 
-        .scroll-section {
+        .hero-section {
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
-            padding: 50px;
-            text-align: left;
+            height: 100vh;
+            text-align: center;
         }
 
-        .episodes-title {
+        .hero-section img {
+            width: 200px;
+        }
+
+        .hero-section h1 {
+            font-family: 'Lora', serif;
             font-size: 32px;
-            font-family: 'Gagalin', sans-serif;
-            margin-bottom: 20px;
-            text-align: center;
+        }
+
+        .episodes-section {
+            padding: 50px;
+            font-size: 24px;
+            font-family: 'Lora', serif;
         }
 
         .episode-content {
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: left;
-            width: 80%;
+            padding: 50px;
         }
 
-        .scroll-image {
+        .episode-content img {
             width: 300px;
-            height: auto;
             margin-right: 20px;
         }
 
-        .scroll-text {
-            max-width: 600px;
-            font-family: 'Lora', serif;
-        }
-
-        .scroll-title {
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-        .scroll-description {
-            font-size: 18px;
-            margin-top: 10px;
+        .episode-description {
+            max-width: 500px;
+            text-align: left;
         }
     </style>
 </head>
 <body>
-    <div class="logo-container">
+    <div class="header">
         <img src="gr1-logo.jpg" alt="Logo" class="logo">
-        <div class="footer-text">DarkSpectrum</div>
+        <div class="nav-buttons">
+            <button>HOME</button>
+            <button>ABOUT</button>
+            <button>PRODUCT</button>
+            <button>CONTACT</button>
+        </div>
     </div>
 
-    <div class="nav-buttons">
-        <button>HOME</button>
-        <button>ABOUT</button>
-        <button>PRODUCTS</button>
-        <button>CONTACT</button>
+    <div class="hero-section">
+        <img src="gr1-logo.jpg" alt="Big Logo">
+        <h1>DarkSpectrum</h1>
     </div>
 
-    <div class="scroll-section">
-        <div class="episodes-title">EPISODES:</div>
-        <div class="episode-content">
-            <img src="jefted.jpg" alt="Jefted Image" class="scroll-image">
-            <div class="scroll-text">
-                <div class="scroll-title">TWO ENDS OF A SPECTRUM, ONE PREDATORY NATURE: HOW SOCIETY ENABLES THE WORST</div>
-                <div class="scroll-description">Explores the chilling stories of Jeffrey Dahmer and Ted Bundy—two infamous serial killers with vastly different personas yet a shared darkness.</div>
-            </div>
+    <div class="episodes-section">
+        <h2>EPISODES:</h2>
+    </div>
+
+    <div class="episode-content">
+        <img src="jefted.jpg" alt="Episode Image">
+        <div class="episode-description">
+            <h3>TWO ENDS OF A SPECTRUM, ONE PREDATORY NATURE:HOW SOCIETY ENABLES THE WORST</h3>
+            <p>Ted Bundy and Jeffrey Dahmer—two of the most infamous serial killers in history. Both terrifying, both killers, <br>
+              both famous enough to have entire movies made about them. And yet, their peers saw them as two completely different people.
+</p>
         </div>
     </div>
 </body>
 </html>
+
 
