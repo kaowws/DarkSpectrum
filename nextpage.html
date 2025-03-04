@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DarkSpectrum</title>
+    <title>DarkSeptrum</title>
 
     <!-- Import Fonts -->
-    <link href="https://fonts.cdnfonts.com/css/gagalin" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/lora" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/carlito" rel="stylesheet">
 
     <style>
         body {
@@ -21,25 +19,39 @@
             overflow-x: hidden;
         }
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            position: fixed;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 1000;
-        }
-
         .logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
             width: 100px;
             height: auto;
         }
 
+        .center-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .center-logo {
+            width: 400px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .footer-text {
+            font-family: 'Lora', serif;
+            font-size: 32px;
+            margin-top: -5px;
+        }
+
         .nav-buttons {
-            display: flex;
-            gap: 20px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
         }
 
         .nav-buttons button {
@@ -48,6 +60,7 @@
             border: none;
             font-family: 'Lora', serif;
             font-size: 18px;
+            margin-left: 15px;
             cursor: pointer;
             transition: color 0.3s ease;
         }
@@ -56,77 +69,68 @@
             color: #ffe3b8;
         }
 
-        .hero-section {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        .content-section {
+            margin-top: 100vh;
             text-align: center;
-            margin-top: 80px;
-        }
-
-        .hero-section img {
-            width: 200px;
-        }
-
-        .hero-section h1 {
-            font-family: 'Lora', serif;
-            font-size: 32px;
-        }
-
-        .episodes-section {
-            padding: 50px;
-            font-size: 24px;
+            font-size: 36px;
             font-family: 'Lora', serif;
         }
 
-        .episode-content {
+        .scroll-section {
             display: flex;
-            align-items: flex-start;
-            justify-content: center;
+            align-items: center;
+            flex-direction: column;
             padding: 50px;
+            text-align: center;
         }
 
-        .episode-content img {
-            width: 150px;
-            margin-right: 20px;
+        .scroll-image {
+            width: 350px;
+            height: auto;
+            margin-bottom: 20px;
         }
 
-        .episode-description {
-            max-width: 500px;
-            text-align: left;
+        .scroll-text {
+            max-width: 600px;
+            font-family: 'Lora', serif;
+        }
+
+        .scroll-title {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .scroll-description {
+            font-size: 18px;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="gr1-logo.jpg" alt="Logo" class="logo">
-        <div class="nav-buttons">
-            <button>HOME</button>
-            <button>ABOUT</button>
-            <button>PRODUCT</button>
-            <button>CONTACT</button>
-        </div>
+    <img src="gr1-logo.jpg" alt="Logo" class="logo">
+    
+    <div class="nav-buttons">
+        <button>HOME</button>
+        <button>ABOUT</button>
+        <button>PRODUCTS</button>
+        <button>CONTACT</button>
+    </div>
+    
+    <div class="center-content">
+        <img src="gr1-logo.jpg" alt="Centered Logo" class="center-logo">
+        <div class="footer-text">DarkSpectrum</div>
     </div>
 
-    <div class="hero-section">
-        <img src="gr1-logo.jpg" alt="Big Logo">
-        <h1>DarkSpectrum</h1>
-    </div>
+    <div class="content-section">Episodes:</div>
 
-    <div class="episodes-section">
-        <h2>EPISODES:</h2>
-    </div>
-
-    <div class="episode-content">
-        <img src="jefted.jpg" alt="Episode Image">
-        <div class="episode-description">
-            <h3>TWO ENDS OF A SPECTRUM, ONE PREDATORY NATURE: HOW SOCIETY ENABLES THE WORST</h3>
-            <p>Ted Bundy and Jeffrey Dahmer—two of the most infamous serial killers in history. Both terrifying, both killers,
-              both famous enough to have entire movies made about them. And yet, their peers saw them as two completely different people.</p>
+    <div class="scroll-section">
+        <img src="jefted.jpg" alt="Scroll Image" class="scroll-image">
+        <div class="scroll-text">
+            <div class="scroll-title">TWO ENDS OF A SPECTRUM, ONE PREDATORY NATURE: HOW SOCIETY ENABLES THE WORST</div>
+            <div class="scroll-description">Explores the chilling stories of Jeffrey Dahmer and Ted Bundy—two infamous serial killers with vastly different personas yet a shared darkness.</div>
         </div>
     </div>
 </body>
 </html>
+
 
