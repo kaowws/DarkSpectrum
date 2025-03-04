@@ -95,14 +95,31 @@
             text-align: left;
         }
 
-        .scroll-title {
-            font-size: 28px;
-            font-weight: bold;
-        }
-
         .scroll-description {
             max-width: 500px;
         }
+
+        /* Bottom Clickable Title */
+        .bottom-title {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Lora', serif;
+        }
+
+        .bottom-title a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .bottom-title a:hover {
+            color: #ffe3b8;
+        }
+
     </style>
 </head>
 <body>
@@ -125,12 +142,20 @@
     <div class="scroll-section">
         <img src="jefted.jpg" alt="Scroll Image" class="scroll-image">
         <div class="scroll-text">
-            <div class="scroll-title">TWO ENDS OF A SPECTRUM, ONE PREDATORY NATURE: HOW SOCIETY ENABLES THE WORST</div>
-            <div class="scroll-description">Ted Bundy and Jeffrey Dahmer—two of the most infamous serial killers in history. Both terrifying, both killers, both famous enough to have entire movies made about them. And yet, their peers saw them as two completely different people.</div>
+            <div class="scroll-description">
+                Ted Bundy and Jeffrey Dahmer—two of the most infamous serial killers in history. Both terrifying, both killers, both famous enough to have entire movies made about them. And yet, their peers saw them as two completely different people.
+            </div>
         </div>
     </div>
+
+    <!-- Bottom Clickable Title -->
+    <div class="bottom-title">
+        <a href="index.html">TWO ENDS OF A SPECTRUM, ONE PREDATORY NATURE: HOW SOCIETY ENABLES THE WORST</a>
+    </div>
+
 </body>
 </html>
+
 
 
 
