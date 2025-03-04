@@ -38,10 +38,8 @@
         }
 
         .nav-buttons {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 10;
+            display: flex;
+            gap: 20px;
         }
 
         .nav-buttons button {
@@ -50,13 +48,23 @@
             border: none;
             font-family: 'Lora', serif;
             font-size: 18px;
-            margin-left: 15px;
             cursor: pointer;
             transition: color 0.3s ease;
         }
 
         .nav-buttons button:hover {
             color: #ffe3b8;
+        }
+
+        .hero-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            margin-top: 80px;
+        }
 
         .hero-section img {
             width: 200px;
@@ -75,13 +83,13 @@
 
         .episode-content {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             padding: 50px;
         }
 
         .episode-content img {
-            width: 300px;
+            width: 150px;
             margin-right: 20px;
         }
 
@@ -114,11 +122,11 @@
     <div class="episode-content">
         <img src="jefted.jpg" alt="Episode Image">
         <div class="episode-description">
-            <h3>TWO ENDS OF A SPECTRUM, ONE PREDATORY NATURE:HOW SOCIETY ENABLES THE WORST</h3>
+            <h3>TWO ENDS OF A SPECTRUM, ONE PREDATORY NATURE: HOW SOCIETY ENABLES THE WORST</h3>
             <p>Ted Bundy and Jeffrey Dahmer—two of the most infamous serial killers in history. Both terrifying, both killers,
-              both famous enough to have entire movies made about them. And yet, their peers saw them as two completely different people.
-</p>
+              both famous enough to have entire movies made about them. And yet, their peers saw them as two completely different people.</p>
         </div>
     </div>
 </body>
 </html>
+
