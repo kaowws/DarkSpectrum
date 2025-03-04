@@ -36,7 +36,7 @@
         }
 
         .center-logo {
-            width: 450px;
+            width: 400px;
             height: auto;
             margin-bottom: 10px;
         }
@@ -69,27 +69,40 @@
             color: #ffe3b8;
         }
 
+        .content-section {
+            margin-top: 100vh;
+            text-align: center;
+            font-size: 36px;
+            font-family: 'Lora', serif;
+        }
+
         .scroll-section {
             display: flex;
             align-items: center;
-            justify-content: left;
+            flex-direction: column;
             padding: 50px;
-            text-align: left;
-            width: 100%;
-            position: absolute;
-            bottom: 0;
+            text-align: center;
         }
 
         .scroll-image {
             width: 350px;
             height: auto;
-            margin-right: 20px;
+            margin-bottom: 20px;
         }
 
         .scroll-text {
-            font-family: 'Lora', serif;
-            font-size: 22px;
             max-width: 600px;
+            font-family: 'Lora', serif;
+        }
+
+        .scroll-title {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .scroll-description {
+            font-size: 18px;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -108,13 +121,14 @@
         <div class="footer-text">DarkSpectrum</div>
     </div>
 
+    <div class="content-section">Episodes:</div>
+
     <div class="scroll-section">
         <img src="jefted.jpg" alt="Scroll Image" class="scroll-image">
         <div class="scroll-text">
-            <div><strong>TWO ENDS OF A SPECTRUM, ONE PREDATORY NATURE: HOW SOCIETY ENABLES THE WORST</strong></div>
-            <div>Explores the chilling stories of Jeffrey Dahmer and Ted Bundy—two infamous serial killers with vastly different personas yet a shared darkness.</div>
+            <div class="scroll-title">TWO ENDS OF A SPECTRUM, ONE PREDATORY NATURE: HOW SOCIETY ENABLES THE WORST</div>
+            <div class="scroll-description">Explores the chilling stories of Jeffrey Dahmer and Ted Bundy—two infamous serial killers with vastly different personas yet a shared darkness.</div>
         </div>
     </div>
 </body>
 </html>
-
