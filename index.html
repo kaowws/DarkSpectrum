@@ -124,6 +124,7 @@
     <div class="nav-buttons">
       <button onclick="window.location.href='index.html'">HOME</button>
         <button>ABOUT</button>
+        <button onclick="scrollToEpisodes()">EPISODE</button>
         <button>PRODUCTS</button>
         <button>CONTACT</button>
     </div>
@@ -173,6 +174,7 @@
     </div>
 
     <div class="content-section">EPISODES:</div>
+     
 
     <div class="scroll-section">
         <img src="jefted.jpg" alt="Scroll Image" class="scroll-image">
@@ -282,6 +284,11 @@
         setInterval(createDustParticles, 3000);
     </script>
 </body>
+    <script>
+    function scrollToEpisodes() {
+        document.getElementById("episodes").scrollIntoView({ behavior: "smooth" });
+    }
+</script>
 </html>
 
 
