@@ -1,1 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkSpectrum - New Page</title>
+
+    <!-- Import Fonts -->
+    <link href="https://fonts.cdnfonts.com/css/gagalin" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/lora" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/carlito" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .background-container {
+            background: url('titoian.jpg') no-repeat center center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+        }
+
+        .logo {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            width: 100px;
+            height: auto;
+        }
+
+        .content-wrapper {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .center-content {
+            text-align: center;
+            width: 80%;
+            max-width: 600px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .center-content h1 {
+            font-family: 'Lora', serif;
+            font-size: 32px;
+            line-height: 1.4;
+            font-weight: bold;
+        }
+
+        .center-content p {
+            font-family: 'Times New Roman', serif;
+            font-size: 18px;
+        }
+
+        .learn-more-btn {
+            font-family: 'Lora', serif;
+            font-size: 14px;
+            padding: 10px 20px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            cursor: pointer;
+            border-radius: 25px;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .learn-more-btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .nav-buttons {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10;
+        }
+
+        .nav-buttons button {
+            background-color: transparent;
+            color: white;
+            border: none;
+            font-family: 'Lora', serif;
+            font-size: 18px;
+            margin-left: 15px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .nav-buttons button:hover {
+            color: #ffe3b8;
+        }
+    </style>
+</head>
+<body>
+    <img src="gr1-logo.jpg" alt="Logo" class="logo">
+    <div class="background-container"></div>
+
+    <div class="nav-buttons">
+        <button onclick="window.location.href='index.html'">HOME</button>
+        <button onclick="window.location.href='about.html'">ABOUT</button>
+        <button onclick="scrollToEpisodes()">EPISODES</button>
+         <button>PRODUCTS</button>
+           <button>CONTACT</button>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="center-content">
+            <h1>ABOUT US</h1>
+            <p>DarkSpectrum is about bla bla bla</p>
+            <button class="learn-more-btn">Learn More</button>
+        </div>
+    </div>
+</body>
+</html>
 
