@@ -144,6 +144,82 @@
         <h1>What is DarkSpectrum?</h1>
         <p>DarkSpectrum delves into the chilling depths of true crime, documenting the twisted minds of serial killers, infamous crimes, and unsolved mysteries. We uncover the darkest corners of history, analyzing cases with deep research and gripping storytelling. From shocking motives to forensic breakthroughs, DarkSpectrum is your gateway into the unsettling yet fascinating world of crime.</p>
     </div> <!-- Properly closed .episode-content div -->
+</body>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DarkSpectrum</title>
+    <link href="https://fonts.cdnfonts.com/css/lora" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: black;
+            color: white;
+            text-align: center;
+            overflow-x: hidden;
+            min-height: 200vh;
+            position: relative;
+        }
 
+        .dust-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+        }
+
+        .dust {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background-color: red;
+            border-radius: 50%;
+            opacity: 0.7;
+            animation: floatDust linear infinite;
+        }
+
+        @keyframes floatDust {
+            0% {
+                transform: translateY(0px) translateX(0px);
+                opacity: 0.7;
+            }
+            50% {
+                opacity: 0.4;
+            }
+            100% {
+                transform: translateY(-100vh) translateX(30px);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="dust-container"></div>
+    <script>
+        function createDustParticles() {
+            const container = document.querySelector('.dust-container');
+            for (let i = 0; i < 50; i++) {
+                let dust = document.createElement('div');
+                dust.classList.add('dust');
+                dust.style.left = Math.random() * 100 + "vw";
+                dust.style.top = Math.random() * 100 + "vh";
+                dust.style.animationDuration = (Math.random() * 5 + 5) + "s";
+                container.appendChild(dust);
+                setTimeout(() => dust.remove(), 10000);
+            }
+        }
+        
+        setInterval(createDustParticles, 3000);
+    </script>
+</body>
+    <script>
+    function scrollToEpisodes() {
+        document.getElementById("episodes").scrollIntoView({ behavior: "smooth" });
+    }
+</script>
 </body>
 </html>
