@@ -103,42 +103,32 @@
             line-height: 1.6;
 
             
-.about-section {
-    margin-top: 2rem;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
-    flex-direction: row; /* Changed from inline to row */
-    align-items: center;
-}
 
-.about-container {
-    display: flex;
-    flex-wrap: wrap;
-    transform: scale(0.93);
-    justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-    gap: 20px;
-}
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 40px 20px;
+        }
 
-.team-member {
-    display: flex;
-    flex-direction: column; /* Ensure proper stacking of image, name, and role */
-    align-items: center;
-    text-align: center;
-}
-.team-member h3 {
-    margin: 10px 0 5px;
-    font-family: 'Montserrat', sans-serif;
-}
-.team-member img {
-    width: 70px !important;  /* Force smaller size */
-    height: 70px !important; /* Keep it equal for a perfect circle */
-    border-radius: 50% !important; /* Ensure circular shape */
-    object-fit: cover !important; /* Keep images well-fitted */
-    display: block !important; /* Prevent layout issues */
+        .team-member {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 100px; 
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            margin: 10px 0 5px;
+            font-family: 'Montserrat', sans-serif;
 
 
         }
@@ -186,31 +176,33 @@
     </div> <!-- Properly closed .episode-content div -->
 </body>
 
+   
     <div class="about-container">
-  <div class="team-member">
-      <img src="alexa.jpg" alt="Member 1">
-      <h3>Alexa Cassandra Taripe</h3>
-  </div>
-        
-  <div class="team-member">
-      <img src="alyssa.jpg" alt="Member 2">
-      <h3>Alyssa Isabel Monterola</h3>
-  </div>
-      
-  <div class="team-member">
-      <img src=ellisigma.jpg" alt="Member 3">
-      <h3>Ellidan Egiab</h3>
-  </div>
-        
-  <div class="team-member">
-      <img src="ian.jpg" alt="Member 4">
-      <h3>Jhomel Ian Avinante</h3>
-  </div>
-        
-  <div class="nyanna-member">
-      <img src="3.jpg" alt="Member 5">
-      <h3>Julliana Marie Bonita</h3> 
-  </div>
+        <div class="team-member">
+            <img src="alexa.jpg" alt="Member 1">
+            <h3>Alexa Cassandra Taripe</h3>
+        </div>
+
+        <div class="team-member">
+            <img src="alyssa.jpg" alt="Member 2">
+            <h3>Alyssa Isabel Monterola</h3>
+        </div>
+
+        <div class="team-member">
+            <img src="ellisigma.jpg" alt="Member 3">
+            <h3>Ellidan Egiab</h3>
+        </div>
+
+        <div class="team-member">
+            <img src="ian.jpg" alt="Member 4">
+            <h3>Jhomel Ian Avinante</h3>
+        </div>
+
+        <div class="team-member">
+            <img src="3.jpg" alt="Member 5">
+            <h3>Julliana Marie Bonita</h3> 
+        </div>
+    </div>
 </div>
 </body>
     
