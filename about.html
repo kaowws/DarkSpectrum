@@ -102,53 +102,56 @@
             margin: 0 auto;
             line-height: 1.6;
 
-             .about-section {
-    margin-top: 2rem;
-    padding: 20px;
-    text-align: center;
-    width: 100%; /* Ensure the section takes the full width */
-    display: flex;
-    font-family: 'Montserrat', sans-serif;
-    flex-direction: column;
-    align-items: center;
-}
             
 .about-section {
     margin-top: 2rem;
     padding: 20px;
     text-align: center;
-    width: 100%; /* Ensure the section takes the full width */
+    width: 100%;
     display: flex;
     font-family: 'Montserrat', sans-serif;
-    flex-direction: inline;
+    flex-direction: row; /* Changed from inline to row */
     align-items: center;
 }
+
 .about-container {
     display: flex;
     flex-wrap: wrap;
-    transform: scale(0.93); /* Adjust the scale to fit the members */
+    transform: scale(0.93);
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
     gap: 20px;
 }
+
+.team-member {
+    display: flex;
+    flex-direction: column; /* Ensure proper stacking of image, name, and role */
+    align-items: center;
+    text-align: center;
+}
+
+.team-member img {
+    width: 80px; /* Adjust the size */
+    height: 80px; /* Keep it equal for a perfect circle */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure it fills the circle properly */
+}
+
 .team-member p {
     font-size: small;
     margin-top: 10px;
 }
+
 .team-member h3 {
     margin: 10px 0 5px;
     font-family: 'Montserrat', sans-serif;
 }
+
 .team-member .role {
     font-style: italic;
-    font-size: x-small;}
+    font-size: x-small;
+}
 
-        .about-container .team-member {
-            display: flex;
-            flex-direction: inline;
-            align-items: center;
-            text-align: center;
-            
         }
     </style>
 </head>
