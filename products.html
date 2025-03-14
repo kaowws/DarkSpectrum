@@ -10,6 +10,24 @@
     <link href="https://fonts.cdnfonts.com/css/gagalin" rel="stylesheet">
 
     <style>
+        body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.scroll-container {
+    min-height: 100vh; /* Ensures it fills the screen */
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-container > * {
+    flex-grow: 1; /* Ensures content fills space properly */
+}
+
+
         /* Smooth scrolling effect */
         html {
             scroll-behavior: smooth;
