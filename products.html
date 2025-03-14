@@ -90,16 +90,9 @@
 
         .prototype {
             display: flex;
-            flex-direction: column-reverse; /* Text appears above the image */
+            flex-direction: column;
             align-items: center;
             margin-top: 20px;
-        }
-
-        .prototype img {
-            max-width: 200px; /* Smaller images */
-            height: auto;
-            border-radius: 10px;
-            margin-top: 10px;
         }
 
         .prototype h3 {
@@ -107,6 +100,21 @@
             font-family: 'Lora', serif;
             color: #ffe3b8;
             margin-bottom: 5px;
+        }
+
+        /* Horizontal row for images */
+        .prototype-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .prototype-images img {
+            max-width: 220px; /* Adjusted size */
+            height: auto;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -121,19 +129,22 @@
         <button>CONTACT</button>
     </div>
 
-    <div id="about" class="content-section">PROTOTYPE:</div>
-
-    <div class="episode-content">
-        <h1>AeroCharge</h1>
-        <p>A small charging device that uses wind, designed to convert wind energy into electrical power using aerodynamics.</p>
-    </div>
-
     <div class="scroll-container">
+        <div class="content-section">PROTOTYPE:</div>
+
+        <div class="episode-content">
+            <h1>AeroCharge</h1>
+            <p>A small charging device that uses wind, designed to convert wind energy into electrical power using aerodynamics.</p>
+        </div>
+
+        <!-- Prototype Images in a Row -->
         <div class="prototype">
             <h3>AeroCharge</h3>
-            <img src="front.jpg" alt="Front View">
-            <img src="side.jpg" alt="Side View">
-            <img src="interior.jpg" alt="Interior View">
+            <div class="prototype-images">
+                <img src="front.jpg" alt="Front View">
+                <img src="side.jpg" alt="Side View">
+                <img src="interior.jpg" alt="Interior View">
+            </div>
         </div>
 
         <div class="episode-content">
